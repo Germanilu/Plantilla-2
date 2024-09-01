@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Map from "@/app/[locale]/components/google-map-location/index";
+import Hero from './components/hero'
 import ScrollToTop from "@/app/[locale]/components/scroll-to-top/index";
 import './page.scss';
 
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div className='home-design'>
       <div className="hero-section">
-        <h1 className='hero-title'>{t('title')}</h1>
+        <Hero/>
       </div>
       <div className="first-section">
         <h2>{t('first-section-title')}</h2>

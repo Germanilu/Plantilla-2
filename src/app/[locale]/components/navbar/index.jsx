@@ -25,7 +25,7 @@ export default function Navbar() {
               {openMenu &&
                 <ul className='mobile-navbar-box'>
                   <li className="list-item">
-                    <Link className="item" href="/">{t('home')}</Link>
+                    <Link className="item" href="/"></Link>
                   </li>
                   <li className="list-item">
                     <Link className="item" href="/about" >{t('about-us')}</Link>
