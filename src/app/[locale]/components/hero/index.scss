@@ -50,3 +50,26 @@
   70% { margin-top: -11.24rem; }
   100% { margin-top: -11.24rem; opacity: 1; }
 }
+
+
+
+@media (max-width: 744px) {
+  .container {
+    flex-direction: column;
+    .animation{
+      div{
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 390px) {
+  .container{
+    font-size: 26px;
+    p{
+      font-size: 68px;
+    }
+  }
+}
