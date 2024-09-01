@@ -16,6 +16,7 @@ export default function Home() {
     <div className='home-design'>
       <div className="hero-section">
         <Hero/>
+        <div className="hero-visible">hola que tal </div>
       </div>
       <div className="first-section">
         <h2>{t('first-section-title')}</h2>
