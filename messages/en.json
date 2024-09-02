@@ -17,6 +17,9 @@
       "text1":"Under the guidance of Chef Kayle and a passionate team, we elevate dining to an art form. From bespoke menus and intimate private dining to grand events and our exclusive Chef's Table, every meal is crafted with precision and flair. Open to discerning guests, we offer exquisite breakfast and lunch from Monday to Friday. And for those nights when you crave gourmet flavors but can't make it out, our new Take-Away Dinners bring the mastery of our kitchen straight to your home. Let us indulge your senses, whether you're dining with us or enjoying our creations in the comfort of your own space.",
       "menu":"Savana Menu"
     },
+    "Breakfast":{
+      "breakfast":"Breakfast at Savana"
+    },
     "Navbar":{
       "home": "Home",
       "about-us":"About",

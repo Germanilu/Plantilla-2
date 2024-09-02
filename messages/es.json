@@ -11,6 +11,9 @@
     "text1":"Bajo la guía del Chef Kayle y un equipo apasionado, elevamos la gastronomía a una forma de arte. Desde menús personalizados y cenas privadas íntimas hasta grandes eventos y nuestra exclusiva Mesa del Chef, cada comida se elabora con precisión y estilo. Abierto a huéspedes exigentes, ofrecemos exquisitos desayunos y almuerzos de lunes a viernes. Y para esas noches en las que anhelas sabores gourmet pero no puedes salir, nuestras nuevas Cenas para Llevar llevan la maestría de nuestra cocina directamente a tu hogar. Permítenos deleitar tus sentidos, ya sea que cenes con nosotros o disfrutes de nuestras creaciones en la comodidad de tu hogar.",
     "menu":"Savana La Carta"
   },
+  "Breakfast":{
+    "breakfast":"Desayuna con nosotros"
+  },
   "Animation-Hero":{
       "restaurant-name":"Savana",
       "text1": "Un Viaje al Sabor",

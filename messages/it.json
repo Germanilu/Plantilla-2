@@ -12,6 +12,9 @@
         "text1":"Sotto la guida del nostro Chef Kayle e di un team appassionato, eleviamo la cucina a una forma d'arte. Dai menu su misura e cene private intime agli eventi grandiosi e al nostro esclusivo Chef's Table, ogni pasto è realizzato con precisione e stile. Aperto agli ospiti più esigenti, offriamo colazioni e pranzi squisiti dal lunedì al venerdì. E per quelle sere in cui desideri sapori gourmet ma non puoi uscire, i nostri nuovi Take-Away Dinners portano la maestria della nostra cucina direttamente a casa tua. Lasciati coccolare dai nostri sapori, sia che tu stia cenando con noi o godendo delle nostre creazioni nel comfort della tua casa.",
         "menu":"Savana Il Menu"
       },
+      "Breakfast":{
+        "breakfast":"Fai colazione con noi"
+      },
       "Navbar":{
         "home": "Home",
         "about-us":"Dicono di Noi",
