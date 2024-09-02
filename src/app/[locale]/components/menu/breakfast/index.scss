@@ -1,3 +1,59 @@
 .breakfast-design{
-    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    .img-left{
+        margin-top: 15rem;
+        .img{
+            scale:.9;
+            animation: fade-in-b linear;
+            animation-timeline: view();
+            animation-range-start: 450px;
+            animation-range-end: 1800px;
+        }
+        .text{
+            display: flex;
+            gap: .5rem;
+            transition: gap 0.7s ease;
+            &:hover {
+                gap: 2rem;
+                cursor: pointer;
+              }
+            p{
+                padding-left: 2rem;
+                text-transform: uppercase;
+                font-size: 32px;
+                font-weight: 500;
+            }
+        }
+    }
+    .img-right{
+        .img{
+            scale:.9;
+            animation: fade-in-b linear;
+            animation-timeline: view();
+            animation-range-start: 450px;
+            animation-range-end: 1800px;
+        }
+    }
+    .img-bottom{
+        margin-top: 5rem;
+        margin-left: 20rem;
+        .img{
+            scale:.9;
+            animation: fade-in-b linear;
+            animation-timeline: view();
+            animation-range-start: 450px;
+            animation-range-end: 1800px;
+        }
+    }
 }
+
+
+
+@keyframes fade-in-b{
+    0%{scale:.9; }
+    50%{scale:1;}
+    100%{scale:1.05;}
+  }
