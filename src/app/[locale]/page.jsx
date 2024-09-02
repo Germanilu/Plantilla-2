@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Map from "@/app/[locale]/components/google-map-location/index";
-import Hero from './components/hero'
+import AnimationHero from './components/hero/animation-hero'
+import Hero from './components/hero/index.jsx'
 import ScrollToTop from "@/app/[locale]/components/scroll-to-top/index";
 import './page.scss';
 
@@ -15,8 +16,10 @@ export default function Home() {
   return (
     <div className='home-design'>
       <div className="hero-section">
+        <AnimationHero/>
+        <div className="hero-visible">
         <Hero/>
-        <div className="hero-visible">hola que tal </div>
+        </div>
       </div>
       <div className="first-section">
         <h2>{t('first-section-title')}</h2>

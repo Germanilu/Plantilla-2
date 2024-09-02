@@ -4,6 +4,17 @@
     "first-section-title": "TITULO PRIMERA SECCION",
     "second-section-title": "TITULO SEGUNDA SECCION"
   },
+  "Hero":{
+      "our-kitchen":"Our kitchen",
+      "capital-letter":"K",
+      "text1":"Our kitchen. Chef Elian Muller and his team -They transform dining into art."
+    },
+  "Animation-Hero":{
+      "restaurant-name":"Savana",
+      "text1": "Un Viaje al Sabor",
+      "text2": "Desde Nuestro Corazón",
+      "text3": "a Tu Mesa."
+    },
   "Navbar":{
     "home": "Home",
     "about-us":"Sobre nosotros",

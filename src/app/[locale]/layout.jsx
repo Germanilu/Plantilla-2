@@ -2,12 +2,12 @@ import {NextIntlClientProvider, useMessages} from 'next-intl';
 import Navbar                                from './components/navbar/index';
 import Footer                                from './components/footer/index';
 import ResponsiveLayout                      from './components/responsive/responsiveLayout';
-import { Inter }                             from "next/font/google";
+import { Cormorant  }                             from "next/font/google";
 import { useLocale }                         from "next-intl";
 import { notFound }                          from "next/navigation";
 import { Providers }                         from "../Redux/provider";
 import "./globals.css";
-const inter = Inter({ subsets: ["latin"] });
+const cormorant = Cormorant ({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Default title",
@@ -24,7 +24,7 @@ export default function RootLayout({ children, params }) {
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={cormorant.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
             <ResponsiveLayout />

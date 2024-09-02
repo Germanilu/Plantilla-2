@@ -1,6 +1,14 @@
 {
-    "Hero":{
-        "slogan":""
+      "Animation-Hero":{
+      "restaurant-name":"Savana",
+      "text1":"Un Viaggio nel Gusto",
+      "text2":"Dal Nostro Cuore",
+      "text3":"alla Tua Tavola."
+      },
+      "Hero":{
+      "our-kitchen":"Our kitchen",
+      "capital-letter":"K",
+      "text1":"Our kitchen. Chef Elian Muller and his team -They transform dining into art."
       },
       "Navbar":{
         "home": "Home",
