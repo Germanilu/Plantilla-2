@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 import Map from "@/app/[locale]/components/google-map-location/index";
 import AnimationHero from './components/hero/animation-hero'
-import Hero from './components/hero/index.jsx'
+import Hero from './components/hero/index.jsx';
+import Breakfast from './components/menu/breakfast';
 import ScrollToTop from "@/app/[locale]/components/scroll-to-top/index";
 import './page.scss';
 
@@ -22,7 +23,7 @@ export default function Home() {
         </div>
       </div>
       <div className="first-section">
-        <h2>{t('first-section-title')}</h2>
+       <Breakfast/>
       </div>
       <div className="second-section">
         <h2>{t('second-section-title')}</h2>
