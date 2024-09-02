@@ -7,3 +7,13 @@
         }
     }
 }
+
+@media (max-width: 744px) {
+    .home-design{
+        .hero-section{
+            .hero-visible{
+                height: 100%;
+            }
+        }
+    }
+}
