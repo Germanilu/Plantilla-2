@@ -11,9 +11,11 @@
       "text3": "to Your Table."
     },
     "Hero":{
-      "our-kitchen":"Our kitchen",
-      "capital-letter":"K",
-      "text1":"Our kitchen. Chef Elian Muller and his team -They transform dining into art."
+      "our":"Our",
+      "kitchen":"Kitchen",
+      "capital-letter":"K.",
+      "text1":"Our kitchen, CHEF ELIAN MULLER AND HIS TEAM —THEY TRANSFORM DINING INTO ART. WITH TAILORED MENUS, PRIVATE DINING, EVENTS BIG OR SMALL AND OUR CAPTIVATING CHEF'S TABLE.OUR HIGH-END KITCHEN CRAFTS EXPERIENCES TO SAVOUR. OPEN TO MEMBERS AND THEIR GUESTS, OUR RESTAURANT SERVES DELECTABLE BREAKFAST AND LUNCH FROM MONDAY TO FRIDAY & WE HAVE SOMETHING NEW FOR YOU - TAKE AWAY DINNERS, IF YOU DON'T HAVE TIME TO DO IT YOURSELF AND LOVE TO BE SPOILED BY OUR CHEFS. EVEN WHEN YOU'RE HOME.",
+      "menu":"Savana Menu"
     },
     "Navbar":{
       "home": "Home",
