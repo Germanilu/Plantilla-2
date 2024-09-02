@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className='home-design'>
       <div className="hero-section">
-        <AnimationHero/>
+        {/* <AnimationHero/> */}
         <div className="hero-visible">
         <Hero/>
         </div>
