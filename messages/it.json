@@ -50,7 +50,14 @@
     "weekend-hours": "Sab - Dom: 11:30 - 23:30",
     "monday-closed": "Lunedì: Chiuso"
     },
-      "Footer":{
-        "title": "Footer"
-      }
+    "Footer": {
+    "phone-label": "telefono",
+    "phone-number": "+39 333464646",
+    "inquiries-label": "Richieste",
+    "inquiries-email": "info@savanarestaurant.com",
+    "socials-label": "Social",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "text": "@ Savana Restaurant | by Il Codice del Gusto"
+    }
 }
