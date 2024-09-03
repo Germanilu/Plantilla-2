@@ -16,7 +16,7 @@
         display: grid;
         grid-template-columns: repeat(2, max-content);
         justify-content: space-between;
-        gap: 2rem;
+        gap: 3rem;
         .info{
             text-align: center;
             text-transform: uppercase;
@@ -28,6 +28,39 @@
             .p-info{
                 font-size: 16px;
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (max-width: 744px) {
+    .contact-design{
+        h2{
+            font-size: 48px;
+        }
+        .contact-information-box{
+            grid-template-columns: repeat(1, max-content);
+            margin-bottom: 5rem;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 390px) {
+    .contact-design{
+        h2{
+            font-size: 32px;
+        }
+        .contact-information-box{
+            .info{
+                .p-principal{
+                    font-size: 22px;
+                    font-weight: 500;
+                    margin-bottom: .3rem;
+                }
+                .p-info{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
             }
         }
     }
