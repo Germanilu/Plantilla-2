@@ -6,6 +6,7 @@ import drink from "../../../../static/media/img/drink.jpg";
 import {motion} from "framer-motion"
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import './index.scss';
+import { useEffect } from 'react';
 
 const Hero = () => {
   const t = useTranslations("Hero");

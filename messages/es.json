@@ -1,9 +1,5 @@
 {
-  "Home": {
-    "title": "TITULO PRINCIPAL",
-    "first-section-title": "TITULO PRIMERA SECCION",
-    "second-section-title": "TITULO SEGUNDA SECCION"
-  },
+
   "Hero":{
     "our":"Nuestra",
     "kitchen":"Cocina",
