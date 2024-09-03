@@ -7,117 +7,31 @@ import { useTranslations }                from "next-intl";
 import './index.scss';
 
 export default function Contact() {
-  const formRef = useRef();
-  const t = useTranslations("Contact-us-component");
-
-  //State
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  //Functions
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        "service_ro4u14g",
-        "template_lledwkg",
-        {
-          from_name: form.name,
-          to_name: "Luciano",
-          from_email: form.email,
-          to_email: "lucianogermani93@gmail.com",
-          message: form.message,
-        },
-        "p4zQqM0lGfEuM7HC9"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert(t('success-alert'));
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-          alert(t('unsuccess-alert'));
-        }
-      );
-  };
-
-
-  return (
-    <div className='contact-design' >
-      <div className="contact-form">
-        <p className='text'>{t('title')}</p>
-        <h3 className='subtitle'>{t('subtitle')}</h3>
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='form'
-        >
-          <label className='form-label'>
-            <span className='name'>{t('name-tag')}</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder={t('name-placeholder')}
-              className='input'
-            />
-          </label>
-          <label className='form-label'>
-            <span className='email'>{t('email-tag')}</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder={t('email-placeholder')}
-              className='input'
-            />
-          </label>
-          <label className='form-label'>
-            <span className='message'>{t('message-tag')}</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder={t('message-placeholder')}
-              className='input textarea'
-            />
-          </label>
-
-          <button
-            type='submit'
-            className='button'
-          >
-            {loading ? t('loading') : t('send')}
-          </button>
-        </form>
+  const t = useTranslations('Contact-Component');
+  
+  return(
+    <div className="contact-design">
+      <h2>{t('title')}</h2>
+      <div className="contact-information-box">
+        <div className="info">
+          <p className="p-principal">{t('restaurant-name')}</p>
+          <p className="p-info">{t('tagline')}</p>
+        </div>
+        <div className="info">
+          <p className="p-principal">{t('address-label')}</p>
+          <p className="p-info">{t('address')}</p>
+        </div>
+        <div className="info">
+          <p className="p-principal">{t('contact-label')}</p>
+          <p className="p-info">{t('email')}</p>
+          <p className="p-info">{t('phone')}</p>
+        </div>
+        <div className="info">
+          <p className="p-principal">{t('hours-label')}</p>
+          <p className="p-info">{t('weekday-hours')}</p>
+          <p className="p-info">{t('weekend-hours')}</p>
+          <p className="p-info">{t('monday-closed')}</p>
+        </div>
       </div>
     </div>
   )

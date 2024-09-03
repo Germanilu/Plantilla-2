@@ -2,6 +2,7 @@ import AnimationHero from './components/hero/animation-hero'
 import Hero from './components/hero/index.jsx';
 import Breakfast from './components/menu/breakfast';
 import Menu from './components/menu';
+import Contact from './components/contact';
 import ScrollToTop from "@/app/[locale]/components/scroll-to-top/index";
 import './page.scss';
 
@@ -20,12 +21,9 @@ export default function Home() {
         <Hero/>
         </div>
       </div>
-      <div className="first-section">
        <Breakfast/>
-      </div>
-      <div className="second-section">
        <Menu/>
-      </div>
+       <Contact/>
       <ScrollToTop />
     </div>
   )

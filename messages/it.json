@@ -36,21 +36,20 @@
       "Contact-us":{
         "title":"Contattaci"
       },
-      "Contact-us-component":{
-        "title":"Contatto",
-        "phone":"Telefono:",
-        "name-tag":"nome",
-        "name-placeholder":"nome",
-        "email-tag":"email",
-        "email-placeholder":"email",
-        "message-tag":"messaggio",
-        "message-placeholder":"messaggio",
-        "send": "Inviare",
-        "loading":"Caricando",
-        "success-alert":"Grazie, ci metteremo in contatto il prima possibile.",
-        "unsuccess-alert":"Qualcosa è andato storto, prova di nuovo",
-        "cancel":"Indietro"
-      },
+     "Contact-Component": {
+    "title": "Incontriamoci",
+    "restaurant-name": "Savana",
+    "tagline": "Un'esperienza unica nel gusto.",
+    "address-label": "Indirizzo",
+    "address": "Via Chiaravagna 118 Paderno d'Adda",
+    "contacts-label": "Contatti",
+    "email": "info@savanarestaurant.com",
+    "phone": "+39 333464646",
+    "hours-label": "Orari di Apertura",
+    "weekday-hours": "Mar - Ven: 12:30 - 22:30",
+    "weekend-hours": "Sab - Dom: 11:30 - 23:30",
+    "monday-closed": "Lunedì: Chiuso"
+    },
       "Footer":{
         "title": "Footer"
       }
