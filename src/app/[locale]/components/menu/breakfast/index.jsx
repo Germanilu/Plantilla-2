@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { useTranslations } from "next-intl";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import {motion} from "framer-motion";
@@ -7,11 +8,11 @@ import porridge from "../../../../../static/media/img/porridge.jpg";
 import restaurant from "../../../../../static/media/img/restaurant.jpg";
 import breakfast from "../../../../../static/media/img/breakfast.jpg";
 import './index.scss';
+
 const Breakfast = () => {
     const t = useTranslations("Breakfast");
     return(
         <div className='breakfast-design'>
-            <></>
             <motion.div className="img-left"
              variants={{
                 hidden:{opacity:0, x:-75},

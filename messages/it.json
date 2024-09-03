@@ -15,6 +15,11 @@
       "Breakfast":{
         "breakfast":"Fai colazione con noi"
       },
+      "Menu-Banner":{
+        "title":"Scopri il nostro Menu",
+        "text":"Lasciati tentare dai sapori unici delle nostre specialità, preparate con ingredienti freschi e di alta qualità. Esplora le nostre proposte e trova il piatto perfetto per il tuo palato.",
+        "button-text":"Savana il Menu"
+      },
       "Navbar":{
         "home": "Home",
         "about-us":"Dicono di Noi",

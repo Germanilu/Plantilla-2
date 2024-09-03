@@ -1,9 +1,7 @@
-
-import Map from "@/app/[locale]/components/google-map-location/index";
 import AnimationHero from './components/hero/animation-hero'
 import Hero from './components/hero/index.jsx';
 import Breakfast from './components/menu/breakfast';
-import Brunch from './components/menu/brunch';
+import Menu from './components/menu';
 import ScrollToTop from "@/app/[locale]/components/scroll-to-top/index";
 import './page.scss';
 
@@ -26,9 +24,8 @@ export default function Home() {
        <Breakfast/>
       </div>
       <div className="second-section">
-       {/* <Brunch/> */}
+       <Menu/>
       </div>
-      <Map />
       <ScrollToTop />
     </div>
   )

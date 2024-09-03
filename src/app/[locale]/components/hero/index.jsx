@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { useSelector }      from 'react-redux';
 import { useTranslations }      from "next-intl";
 import Image from 'next/image';
@@ -6,7 +7,6 @@ import drink from "../../../../static/media/img/drink.jpg";
 import {motion} from "framer-motion"
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import './index.scss';
-import { useEffect } from 'react';
 
 const Hero = () => {
   const t = useTranslations("Hero");

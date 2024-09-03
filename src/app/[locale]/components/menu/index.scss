@@ -1,0 +1,118 @@
+.menu-design{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 5rem;
+    .menu-banner{
+        background-color: #ffac81;
+        width: 100%;
+        display: flex;
+        .text-container{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+           .text{
+            width: 70%;
+            h2{
+                color: #2A2D34;
+                font-size: 58px;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+            }
+            p{
+                color: #2A2D34;
+                width: 70%;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            .menu-button{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                gap: .5rem;
+                transition: gap 0.7s ease;
+                padding-left: 15%;
+                &:hover {
+                    gap: 2rem;
+                    cursor: pointer;
+                }
+                p{
+                    width: max-content;
+                    font-size: 32px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+            }
+           }
+        }
+        .img-box{
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 744px) {
+    .menu-design{
+        .menu-banner{
+            flex-direction: column;
+            .text-container{
+                width: 100%;
+                align-items: center;
+               .text{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2rem;
+                h2{
+                    font-size: 42px;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 500;
+                    width: 90%;
+                    text-align: center;
+                }
+               }
+            }
+            .img-box{
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 390px) {
+    .menu-design{
+        .menu-banner{
+            .text-container{
+               .text{
+                h2{
+                    font-size: 32px;
+                    text-align: center;
+                    font-weight: 700;
+                }
+                .menu-button{
+                    padding-left: 0rem;
+                    justify-content: center;
+                    p{
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
+                }
+               }
+            }
+        }
+    }
+}

@@ -15,6 +15,11 @@
     "Breakfast":{
       "breakfast":"Breakfast at Savana"
     },
+  "Menu-Banner": {
+    "title": "Discover Our Menu",
+    "text": "Let yourself be tempted by the unique flavors of our specialties, prepared with fresh and high-quality ingredients. Explore our offerings and find the perfect dish for your taste.",
+    "button-text": "Explore the Menu"
+    },
     "Navbar":{
       "home": "Home",
       "about-us":"About",

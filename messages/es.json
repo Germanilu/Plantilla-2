@@ -16,6 +16,11 @@
       "text2": "Desde Nuestro Corazón",
       "text3": "a Tu Mesa."
     },
+   "Menu-Banner": {
+    "title": "Descubre Nuestro Menú",
+    "text": "Déjate tentar por los sabores únicos de nuestras especialidades, preparadas con ingredientes frescos y de alta calidad. Explora nuestras propuestas y encuentra el plato perfecto para tu paladar.",
+    "button-text": "Explora el Menú"
+    },
   "Navbar":{
     "home": "Home",
     "about-us":"Sobre nosotros",

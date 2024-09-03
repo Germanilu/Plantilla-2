@@ -11,4 +11,6 @@ a {
 
 body{
   scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #2A2D34;
 }
