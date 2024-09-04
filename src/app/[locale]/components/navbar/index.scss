@@ -9,14 +9,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: #131417;
-  animation: changeBgBlackWhite .5s 6.5s ease-in forwards;  
   .logo{
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 28px;
     margin-left: 6rem;
     cursor: pointer;
-    animation: changeColor .5s 6.5s ease-in forwards;
     color:#ddd;
   }
   .navbar-list-container{
@@ -30,17 +28,17 @@
       justify-content: space-around;
       gap: .3rem;
       color: #ddd;
-      animation: changeColor .5s 6.5s ease-in forwards;
       .list-item{
         list-style-type: none;
         display: flex;
         align-items: center;
+        font-size: 18px;
+        font-weight: 500;
         .dot{
           width: 5px;
           height: 5px;
           border-radius: 50%;
           background-color: white;
-          animation: changeBgWhiteBlack .5s 6.5s ease-in forwards;
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
           transition: transform 0.3s ease;
           opacity: 0;
@@ -80,16 +78,17 @@
       align-items: center;
       justify-content: space-between;
       position: fixed;
-      background-color: #ffffff;
+      background-color: #131417;
       z-index: 200;
       width: 95%;
-      border-bottom: 1px solid #2A2D34;
+      border-bottom: 1px solid #ddd;
       .logo-menu-close{
         font-size: 58px;
         margin-left: 0rem;
         padding: 0rem 1rem;
         font-weight: 500;
         text-transform: uppercase;
+        color: #ddd;
       }
       &.open{
         height: 100%;
@@ -111,7 +110,7 @@
           margin-top: 5rem;
           margin-bottom: 6rem;
           font-size: 28px;
-          color: black;
+          color: #ddd;
         }
         .mobile-navbar-box{
           width: 100%;
@@ -121,13 +120,14 @@
           align-items: flex-start;
           padding-top: 4rem;
           padding-bottom: 2.5rem;
-          border-bottom: 1px solid black;
-          border-top: 1px solid black;
+          border-bottom: 1px solid #ddd;
+          border-top: 1px solid #ddd;
           gap: 2rem;
           .left-menu-mobile{
             display: flex;
             flex-direction: column;
             gap: .5rem;
+            color: #ddd;
             .item{
               font-size: 18px;
               font-weight: 500;
@@ -145,8 +145,8 @@
           padding-bottom: 3rem;
           width: 100%;
           justify-content: center;
-
-          border-bottom: 1px solid black;
+          color: #ddd;
+          border-bottom: 1px solid #ddd;
           
           .info{
             display: flex;
@@ -163,32 +163,11 @@
         }
         .registered{
           margin-top: 5rem;
+          color: #ddd;
         }
 
       }
       
     }
   }
-}
-
-@keyframes changeBgBlackWhite{
-  from{
-    background-color: #2A2D34;
-    border-bottom: 2px solid #ddd;
-   }
-
-  to{
-    background-color: white;
-    border-bottom: 2px solid #2A2D34;
-  }
-}
-
-@keyframes changeBgWhiteBlack{
-  from{background-color: white; }
-  to{background-color: #2A2D34;}
-}
-
-@keyframes changeColor{
-  from{color: white; }
-  to{color: #2A2D34;}
 }

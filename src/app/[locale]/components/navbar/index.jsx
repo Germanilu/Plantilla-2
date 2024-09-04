@@ -25,10 +25,10 @@ export default function Navbar() {
           <nav className="navbar">
             <div className={`menu-action ${openMenu ? 'open' : ""}`} >
               {openMenu ?
-                <RxCross2 className='burger-menu-icon' size={35} onClick={() => setOpenMenu(!openMenu)} />
+                <RxCross2 className='burger-menu-icon' color='#ddd' size={35} onClick={() => setOpenMenu(!openMenu)} />
                 :
                 <>
-                  <IoMenu className='burger-menu-icon' size={35} onClick={() => setOpenMenu(!openMenu)} />
+                  <IoMenu className='burger-menu-icon' color='#ddd' size={35} onClick={() => setOpenMenu(!openMenu)} />
                   <Link className='logo-menu-close' href="/">Savana</Link>
                 </>
 
