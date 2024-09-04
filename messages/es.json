@@ -25,7 +25,8 @@
     "home": "Home",
     "about-us":"Sobre nosotros",
     "menu": "Menu",
-    "contact-us":"Contacto"
+    "contact-us":"Contacto",
+    "breakfast":"Desayuna con nosotros"
   },
   "About":{
     "title":"Titulo pagina sobre nosotros"

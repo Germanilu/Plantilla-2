@@ -45,12 +45,16 @@ export default function Navbar() {
           </nav>
           :
           <nav className="navbar">
+              
+            <div className="logo" >Savana Restaurant</div>
+           
+           <div className="navbar-list-container">
             <ul className="navbar-list">
               <li className="list-item">
                 <Link className="item" href="/">{t('home')}</Link>
               </li>
               <li className="list-item">
-                <Link className="item" href="/about" >{t('about-us')}</Link>
+                <Link className="item" href="/breakfast">{t('breakfast')}</Link>
               </li>
               <li className="list-item">
                 <Link className="item" href="/menu">{t('menu')}</Link>
@@ -58,8 +62,10 @@ export default function Navbar() {
               <li className="list-item">
                 <Link className="item" href="/contact-us">{t('contact-us')}</Link>
               </li>
-              <LanguageSwitcher />
             </ul>
+              <LanguageSwitcher />
+
+           </div>
           </nav>
       }
     </>

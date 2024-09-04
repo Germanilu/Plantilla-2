@@ -5,12 +5,29 @@
   background-color: $white;
   padding: 1rem 0rem;
   border-bottom: 2px solid $black;
-  .navbar-list{
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .logo{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    border: 1px solid red;
+    margin-left: 6rem;
+  }
+  .navbar-list-container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
+    flex-direction: row-reverse;
+    .navbar-list{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      list-style-type: none;
+      border: 1px solid red;
+      .list-item{
+    
+      }
+    }
+
   }
 }
 
