@@ -7,61 +7,158 @@
   border-bottom: 2px solid $black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   .logo{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    border: 1px solid red;
     margin-left: 6rem;
   }
   .navbar-list-container{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: flex-start;
     .navbar-list{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      list-style-type: none;
-      border: 1px solid red;
+      gap: .3rem;
       .list-item{
-    
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        .dot{
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: black;
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+          transition: transform 0.6s ease;
+          opacity: 0;
+        }
+        &:hover{
+          .dot{
+            display: block;
+            transform: translate3d(-8px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+            transform-style: preserve-3d;
+            opacity: 1;
+          }
+        }
       }
+
+    }
+    .language-switcher-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
   }
 }
 
 
-@media screen and (max-width: '767px') {
+@media  (max-width: 767px) {
   .navbar{
-    padding: .5rem 0rem;
+    padding: 0rem 0rem;
     border-bottom: none;
+    align-items: flex-start;
+    justify-content: center;
     .menu-action{
-      margin-right: 1rem;
+      margin: 0 auto;
       width: 100%;
       display: flex; 
-      flex-direction: column;
-      align-items: flex-end;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      background-color: #ffffff;
+      z-index: 200;
+      width: 95%;
+      border-bottom: 1px solid #2A2D34;
+      .logo-menu-close{
+        font-size: 58px;
+        margin-left: 0rem;
+        padding: 0rem 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      &.open{
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
       .burger-menu-icon{
         margin-right: .5rem;
+        margin-top: .5rem;
       }
-      .mobile-navbar-box{
+      .container-navbar{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .list-item{
+        
+        .logo{
+          margin: 0;
+          margin-top: 5rem;
+          margin-bottom: 6rem;
+          font-size: 28px;
+        }
+        .mobile-navbar-box{
           width: 100%;
           display: flex;
-          align-items: center;
-          justify-content: right;
-          padding: .5rem 0rem;
-          margin-right: 2rem;
-          .item{
-            border-bottom: 1px solid $black;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          padding-top: 4rem;
+          padding-bottom: 2.5rem;
+          border-bottom: 1px solid black;
+          border-top: 1px solid black;
+          gap: 2rem;
+          .left-menu-mobile{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            .item{
+              font-size: 18px;
+              font-weight: 500;
+              text-transform: uppercase;
+              text-align: center;
+            }
+            
           }
         }
+        .contact-information-box{
+          display: grid;
+          grid-template-columns: repeat(2, max-content);
+          gap: 1rem 2rem;
+          margin-top: 3rem;
+          padding-bottom: 3rem;
+          width: 100%;
+          justify-content: center;
+
+          border-bottom: 1px solid black;
+          
+          .info{
+            display: flex;
+            flex-direction: column;
+            .info-label{
+              font-size: 18px;
+              font-weight: 500;
+              text-transform: uppercase;
+            }
+            .info-text{
+              font-size: 16px;
+            }
+          }
+        }
+        .registered{
+          margin-top: 5rem;
+        }
+
       }
+      
     }
   }
 }
