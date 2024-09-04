@@ -13,7 +13,10 @@
       "menu":"Savana Menu"
     },
     "Breakfast":{
-      "breakfast":"Breakfast at Savana"
+      "breakfast":"Breakfast at Savana",
+      "title":"Fai colazione con noi",
+      "text":"Con prodotti freschi e di stagione",
+      "dish1":"Fish"
     },
   "Menu-Banner": {
     "title": "Discover Our Menu",

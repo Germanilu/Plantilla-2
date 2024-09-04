@@ -13,7 +13,10 @@
         "menu":"Savana Il Menu"
       },
       "Breakfast":{
-        "breakfast":"Fai colazione con noi"
+        "breakfast":"Fai colazione con noi",
+        "title":"Fai colazione con noi",
+        "text":"Con prodotti freschi e di stagione",
+        "dish1":"Merluzzo in crema di patate"
       },
       "Menu-Banner":{
         "title":"Scopri il nostro Menu",

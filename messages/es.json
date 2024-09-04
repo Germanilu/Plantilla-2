@@ -8,7 +8,8 @@
     "menu":"Savana La Carta"
   },
   "Breakfast":{
-    "breakfast":"Desayuna con nosotros"
+    "breakfast":"Desayuna con nosotros",
+    "dish1":"Fish"
   },
   "Animation-Hero":{
       "restaurant-name":"Savana",
