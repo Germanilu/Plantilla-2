@@ -2,6 +2,7 @@
 
 import { Link } from '../../../../navigation';
 import LanguageSwitcher from '../language-switcher';
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
@@ -16,25 +17,54 @@ export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const isMobile = useSelector(state => state.responsive.isMobile);
 
+
   return (
     <>
       {
         isMobile ?
           <nav className="navbar">
-            <div className={`menu-action ${openMenu ? 'open':""}`} >
+            <div className={`menu-action ${openMenu ? 'open' : ""}`} >
               {openMenu ?
-               <RxCross2 className='burger-menu-icon' size={35} onClick={() => setOpenMenu(!openMenu)} /> 
-               :
-               <>
-               <IoMenu className='burger-menu-icon' size={35} onClick={() => setOpenMenu(!openMenu)} />
-                <span className='logo-menu-close'>Savana</span>
-              </>
-               
-               }
+                <RxCross2 className='burger-menu-icon' size={35} onClick={() => setOpenMenu(!openMenu)} />
+                :
+                <>
+                  <IoMenu className='burger-menu-icon' size={35} onClick={() => setOpenMenu(!openMenu)} />
+                  <span className='logo-menu-close'>Savana</span>
+                </>
+
+              }
               {openMenu &&
-                <div className="container-navbar">
-                  <div className="logo" >{t('savana')}</div>
-                  <div className='mobile-navbar-box'>
+                <motion.div className="container-navbar"
+                  variants={{
+                    hidden: { opacity: 0, y: 0 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  transition={{ delay: .1, duration: 0.5 }}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                >
+
+                  <motion.div className="logo"
+                    variants={{
+                      hidden: { opacity: 0, y: -50 },
+                      visible: { opacity: 1, y: 0 },
+                    }}
+                    transition={{ delay: .3, duration: 0.5 }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                  >{t('savana')}</motion.div>
+                  <motion.div className='mobile-navbar-box'
+                    variants={{
+                      hidden: { opacity: 0, y: 0 },
+                      visible: { opacity: 1, y: 0 },
+                    }}
+                    transition={{ delay: .5, duration: 0.5 }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}>
+
                     <div className="left-menu-mobile">
                       <Link className="item" href="/breakfast" onClick={() => setOpenMenu(!openMenu)}>{t('breakfast')}</Link>
                       <Link className="item" href="/menu" onClick={() => setOpenMenu(!openMenu)}>{t('menu')}</Link>
@@ -43,8 +73,17 @@ export default function Navbar() {
                     <div className="language-switcher-box">
                       <LanguageSwitcher className="language-switcher" />
                     </div>
-                  </div>
-                  <div className="contact-information-box">
+                  </motion.div>
+                  <motion.div className="contact-information-box"
+                    variants={{
+                      hidden: { opacity: 0, y: 0 },
+                      visible: { opacity: 1, y: 0 },
+                    }}
+                    transition={{ delay: .7, duration: 0.5 }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}>
+
                     <div className="info">
                       <span className="info-label">{tfooter('phone-label')}</span>
                       <p className="info-text">{tfooter('phone-number')}</p>
@@ -58,11 +97,20 @@ export default function Navbar() {
                       <span className="info-label">{tfooter('inquiries-label')}</span>
                       <p className="info-text">{tfooter('inquiries-email')}</p>
                     </div>
-                  </div>
-                  <div className="registered">
+                  </motion.div>
+                  <motion.div className="registered"
+                    variants={{
+                      hidden: { opacity: 0, y: 0 },
+                      visible: { opacity: 1, y: 0 },
+                    }}
+                    transition={{ delay: .9, duration: 0.5 }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                  >
                     <span className="info-text">{tfooter('text')}</span>
-                  </div>
-                </div>
+                  </motion.div>
+                </motion.div>
               }
             </div>
           </nav>
