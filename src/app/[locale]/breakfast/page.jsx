@@ -1,14 +1,20 @@
 'use client';
-import { useTranslations }  from "next-intl";
+import { useTranslations } from "next-intl";
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Image from 'next/image';
-import dessert from "../../../static/media/img/dessert.jpg";
-import coffee from "../../../static/media/img/coffee.jpg";
-import fish from "../../../static/media/img/fish.jpg";
+import avocadotoast from "../../../static/media/img/br-avocadotoast.jpg";
+import benedict from "../../../static/media/img/br-benedict.jpg";
+import croissant from "../../../static/media/img/br-croissant.jpg";
+import minipancakes from "../../../static/media/img/br-mini-pancakes.jpg";
+import pancakes from "../../../static/media/img/br-pancakes.jpg";
+import shakshuka from "../../../static/media/img/br-shakshuka.jpg";
+import waffle from "../../../static/media/img/br-waffle.jpg";
+import yogurt from "../../../static/media/img/br-yogurt.jpg";
+import juice from "../../../static/media/img/br-juice.jpg";
 import './page.scss'
 
-export default function BreakFast(){
+export default function BreakFast() {
   const t = useTranslations("Breakfast");
   const [fullScreenImage, setFullScreenImage] = useState(null);
 
@@ -25,7 +31,7 @@ export default function BreakFast(){
       <h1>{t('title')}</h1>
       <span>{t('text')}</span>
       <div className="images-grid">
-        <motion.div className="image" onClick={() => handleImageClick(fish)}
+        <motion.div className="image" onClick={() => handleImageClick(avocadotoast)}
           variants={{
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
@@ -35,10 +41,10 @@ export default function BreakFast(){
           whileInView="visible"
           viewport={{ once: true }}>
 
-          <Image className="img" src={fish} alt="drink2" width={300} height={300} quality={100} />
+          <Image className="img" src={avocadotoast} alt="drink2" width={300} height={300} quality={100} />
           <span className="img-name">{t('dish1')}</span>
         </motion.div>
-        <motion.div className="image" onClick={() => handleImageClick(fish)}
+        <motion.div className="image" onClick={() => handleImageClick(benedict)}
           variants={{
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
@@ -48,10 +54,10 @@ export default function BreakFast(){
           whileInView="visible"
           viewport={{ once: true }}>
 
-          <Image className="img" src={fish} alt="drink2" width={300} height={300} quality={100} />
-          <span className="img-name">{t('dish1')}</span>
+          <Image className="img" src={benedict} alt="drink2" width={300} height={300} quality={100} />
+          <span className="img-name">{t('dish2')}</span>
         </motion.div>
-        <motion.div className="image" onClick={() => handleImageClick(fish)}
+        <motion.div className="image" onClick={() => handleImageClick(croissant)}
           variants={{
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
@@ -61,10 +67,10 @@ export default function BreakFast(){
           whileInView="visible"
           viewport={{ once: true }}>
 
-          <Image className="img" src={fish} alt="drink2" width={300} height={300} quality={100} />
-          <span className="img-name">{t('dish1')}</span>
+          <Image className="img" src={croissant} alt="drink2" width={300} height={300} quality={100} />
+          <span className="img-name">{t('dish3')}</span>
         </motion.div>
-        <motion.div className="image" onClick={() => handleImageClick(fish)}
+        <motion.div className="image" onClick={() => handleImageClick(minipancakes)}
           variants={{
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
@@ -74,10 +80,10 @@ export default function BreakFast(){
           whileInView="visible"
           viewport={{ once: true }}>
 
-          <Image className="img" src={fish} alt="drink2" width={300} height={300} quality={100} />
-          <span className="img-name">{t('dish1')}</span>
+          <Image className="img" src={minipancakes} alt="drink2" width={300} height={300} quality={100} />
+          <span className="img-name">{t('dish4')}</span>
         </motion.div>
-        <motion.div className="image" onClick={() => handleImageClick(fish)}
+        <motion.div className="image" onClick={() => handleImageClick(pancakes)}
           variants={{
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
@@ -87,10 +93,10 @@ export default function BreakFast(){
           whileInView="visible"
           viewport={{ once: true }}>
 
-          <Image className="img" src={fish} alt="drink2" width={300} height={300} quality={100} />
-          <span className="img-name">{t('dish1')}</span>
+          <Image className="img" src={pancakes} alt="drink2" width={300} height={300} quality={100} />
+          <span className="img-name">{t('dish5')}</span>
         </motion.div>
-        <motion.div className="image" onClick={() => handleImageClick(fish)}
+        <motion.div className="image" onClick={() => handleImageClick(shakshuka)}
           variants={{
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
@@ -100,10 +106,10 @@ export default function BreakFast(){
           whileInView="visible"
           viewport={{ once: true }}>
 
-          <Image className="img" src={fish} alt="drink2" width={300} height={300} quality={100} />
-          <span className="img-name">{t('dish1')}</span>
+          <Image className="img" src={shakshuka} alt="drink2" width={300} height={300} quality={100} />
+          <span className="img-name">{t('dish6')}</span>
         </motion.div>
-        <motion.div className="image" onClick={() => handleImageClick(dessert)}
+        <motion.div className="image" onClick={() => handleImageClick(waffle)}
           variants={{
             hidden: { opacity: 0, y: 75 },
             visible: { opacity: 1, y: 0 },
@@ -113,9 +119,10 @@ export default function BreakFast(){
           whileInView="visible"
           viewport={{ once: true }}>
 
-          <Image className="img" src={dessert} alt="drink1" width={300} height={300} quality={100} />
+          <Image className="img" src={waffle} alt="drink1" width={300} height={300} quality={100} />
+          <span className="img-name">{t('dish7')}</span>
         </motion.div>
-        <motion.div className="image" onClick={() => handleImageClick(coffee)}
+        <motion.div className="image" onClick={() => handleImageClick(yogurt)}
           variants={{
             hidden: { opacity: 0, x: 75 },
             visible: { opacity: 1, x: 0 },
@@ -125,9 +132,10 @@ export default function BreakFast(){
           whileInView="visible"
           viewport={{ once: true }}>
 
-          <Image className="img" src={coffee} alt="drink3" width={300} height={300} quality={100} />
+          <Image className="img" src={yogurt} alt="drink3" width={300} height={300} quality={100} />
+          <span className="img-name">{t('dish8')}</span>
         </motion.div>
-        <motion.div className="image" onClick={() => handleImageClick(coffee)}
+        <motion.div className="image" onClick={() => handleImageClick(juice)}
           variants={{
             hidden: { opacity: 0, x: 75 },
             visible: { opacity: 1, x: 0 },
@@ -137,10 +145,9 @@ export default function BreakFast(){
           whileInView="visible"
           viewport={{ once: true }}>
 
-          <Image className="img" src={coffee} alt="drink3" width={300} height={300} quality={100} />
+          <Image className="img" src={juice} alt="drink3" width={300} height={300} quality={100} />
+          <span className="img-name">{t('dish9')}</span>
         </motion.div>
-        
-        
       </div>
 
       {fullScreenImage && (
@@ -149,5 +156,5 @@ export default function BreakFast(){
         </div>
       )}
     </div>
-  ) 
+  )
 }

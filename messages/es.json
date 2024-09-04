@@ -9,7 +9,17 @@
   },
   "Breakfast":{
     "breakfast":"Desayuna con nosotros",
-    "dish1":"Fish"
+    "title": "Desayuna con nosotros",
+    "text": "Con productos frescos y de temporada",
+    "dish1": "Tostada de Aguacate",
+    "dish2": "Huevos Benedict",
+    "dish3": "Tostadas Francesas de Brioche",
+    "dish4": "Panqueques Esponjosos de Ricotta",
+    "dish5": "Panqueques Clásicos",
+    "dish6": "Shakshuka",
+    "dish7": "Waffles Crujientes",
+    "dish8": "Yogur Griego con Granola",
+    "dish9": "Jugos Frescos"
   },
   "Animation-Hero":{
       "restaurant-name":"Savana",

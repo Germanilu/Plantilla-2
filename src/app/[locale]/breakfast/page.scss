@@ -1,7 +1,6 @@
 @import "../../utilities/variables.scss";
 
 .breakfast-us-design{
-    // height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,8 +18,8 @@
         margin: 0 auto;
         margin-top: 2rem;
         display: grid;
-        grid-template-columns: repeat(4, max-content);
-        justify-content: space-around;
+        grid-template-columns: repeat(3, 300px);
+        justify-content: center;
         align-items: center;
         gap: 3rem;
         .image{
@@ -49,4 +48,13 @@
             max-height: 100%;
         }
         }
+}
+
+@media (max-width: 744px) {
+    .breakfast-us-design{
+        margin-top: 5rem;
+        .images-grid{
+            grid-template-columns: repeat(1, 300px);
+        }
+    }
 }
