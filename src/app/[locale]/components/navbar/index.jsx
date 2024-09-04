@@ -29,7 +29,7 @@ export default function Navbar() {
                 :
                 <>
                   <IoMenu className='burger-menu-icon' size={35} onClick={() => setOpenMenu(!openMenu)} />
-                  <span className='logo-menu-close'>Savana</span>
+                  <Link className='logo-menu-close' href="/">Savana</Link>
                 </>
 
               }
@@ -116,7 +116,7 @@ export default function Navbar() {
           </nav>
           :
           <nav className="navbar">
-            <div className="logo" >{t('savana')}</div>
+            <div className="logo" ><Link className="item" href="/">{t('savana')}</Link></div>
             <div className="navbar-list-container">
               <ul className="navbar-list">
                 <li className="list-item">

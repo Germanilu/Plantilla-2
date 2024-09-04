@@ -4,15 +4,20 @@
   width: 100%;
   background-color: $white;
   padding: 1rem 0rem;
-  border-bottom: 2px solid $black;
+  border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #131417;
+  animation: changeBgBlackWhite .5s 6.5s ease-in forwards;  
   .logo{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
     margin-left: 6rem;
+    cursor: pointer;
+    animation: changeColor .5s 6.5s ease-in forwards;
+    color:#ddd;
   }
   .navbar-list-container{
     display: flex;
@@ -24,6 +29,8 @@
       flex-direction: column;
       justify-content: space-around;
       gap: .3rem;
+      color: #ddd;
+      animation: changeColor .5s 6.5s ease-in forwards;
       .list-item{
         list-style-type: none;
         display: flex;
@@ -32,7 +39,8 @@
           width: 5px;
           height: 5px;
           border-radius: 50%;
-          background-color: black;
+          background-color: white;
+          animation: changeBgWhiteBlack .5s 6.5s ease-in forwards;
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
           transition: transform 0.3s ease;
           opacity: 0;
@@ -98,12 +106,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
         .logo{
           margin: 0;
           margin-top: 5rem;
           margin-bottom: 6rem;
           font-size: 28px;
+          color: black;
         }
         .mobile-navbar-box{
           width: 100%;
@@ -161,4 +169,26 @@
       
     }
   }
+}
+
+@keyframes changeBgBlackWhite{
+  from{
+    background-color: #2A2D34;
+    border-bottom: 2px solid #ddd;
+   }
+
+  to{
+    background-color: white;
+    border-bottom: 2px solid #2A2D34;
+  }
+}
+
+@keyframes changeBgWhiteBlack{
+  from{background-color: white; }
+  to{background-color: #2A2D34;}
+}
+
+@keyframes changeColor{
+  from{color: white; }
+  to{color: #2A2D34;}
 }
