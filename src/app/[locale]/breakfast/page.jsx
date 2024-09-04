@@ -36,7 +36,7 @@ export default function BreakFast() {
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ delay: 0.7, duration: 0.7 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
@@ -49,7 +49,7 @@ export default function BreakFast() {
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ delay: 0.7, duration: 0.7 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
@@ -62,7 +62,7 @@ export default function BreakFast() {
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ delay: 0.7, duration: 0.7 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
@@ -75,7 +75,7 @@ export default function BreakFast() {
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ delay: 0.7, duration: 0.7 }}
+          transition={{ delay: 0.8, duration: 0.5 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
@@ -88,7 +88,7 @@ export default function BreakFast() {
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ delay: 0.7, duration: 0.7 }}
+          transition={{ delay: 0.9, duration: 0.5 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
@@ -101,7 +101,7 @@ export default function BreakFast() {
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ delay: 0.7, duration: 0.7 }}
+          transition={{ delay: 1, duration: 0.5 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
@@ -111,10 +111,10 @@ export default function BreakFast() {
         </motion.div>
         <motion.div className="image" onClick={() => handleImageClick(waffle)}
           variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
           }}
-          transition={{ delay: 0.8, duration: 0.7 }}
+          transition={{ delay: 1.1, duration: 0.5 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
@@ -124,10 +124,10 @@ export default function BreakFast() {
         </motion.div>
         <motion.div className="image" onClick={() => handleImageClick(yogurt)}
           variants={{
-            hidden: { opacity: 0, x: 75 },
+            hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ delay: 0.9, duration: 0.7 }}
+          transition={{ delay: 1.2, duration: 0.5 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
@@ -137,10 +137,10 @@ export default function BreakFast() {
         </motion.div>
         <motion.div className="image" onClick={() => handleImageClick(juice)}
           variants={{
-            hidden: { opacity: 0, x: 75 },
+            hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ delay: 0.9, duration: 0.7 }}
+          transition={{ delay: 1.3, duration: 0.5 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>

@@ -9,9 +9,12 @@
     h1{
         font-size: 38px;
         font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
     }
     span{
         font-weight: 500;
+        text-transform: uppercase;
     }
     .images-grid{
         width: 90%;
@@ -23,12 +26,20 @@
         align-items: center;
         gap: 3rem;
         .image{
+            .img{
+                transform: scale(1);
+                transition: transform .5s ease;
+               
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             .img-name{
-                margin-top: .5rem;
+                margin-top: 1rem;
             }
         }
     }
