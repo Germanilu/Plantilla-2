@@ -4,18 +4,18 @@
   width: 100%;
   background-color: $white;
   padding: 1rem 0rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #131417;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #131417;
+  background-color: white;
   .logo{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 28px;
     margin-left: 6rem;
     cursor: pointer;
-    color:#ddd;
+    color:#131417;
   }
   .navbar-list-container{
     display: flex;
@@ -27,7 +27,7 @@
       flex-direction: column;
       justify-content: space-around;
       gap: .3rem;
-      color: #ddd;
+      color: #131417;
       .list-item{
         list-style-type: none;
         display: flex;
@@ -38,7 +38,7 @@
           width: 5px;
           height: 5px;
           border-radius: 50%;
-          background-color: white;
+          background-color: #131417;
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
           transition: transform 0.3s ease;
           opacity: 0;

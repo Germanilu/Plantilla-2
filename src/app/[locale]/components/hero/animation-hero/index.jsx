@@ -14,6 +14,7 @@ const AnimationHero = () => {
             transition={{ delay: 5, duration: 0.5 }}
             initial="hidden"
             animate="visible"
+            viewport={{ once: true }}
         >
             <p>{t('restaurant-name')}</p>
             <section className="animation">
