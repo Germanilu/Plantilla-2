@@ -28,8 +28,26 @@ export default function BreakFast() {
 
   return (
     <div className="breakfast-us-design">
-      <h1>{t('title')}</h1>
-      <span>{t('text')}</span>
+      <motion.h1
+      variants={{
+        hidden: { opacity: 0, x: 0 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      transition={{ delay: 0.5, duration: 0.5 }}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      >{t('title')}</motion.h1>
+      <motion.span
+        variants={{
+          hidden: { opacity: 0, x: 0 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >{t('text')}</motion.span>
       <div className="images-grid">
         <motion.div className="image" onClick={() => handleImageClick(avocadotoast)}
           variants={{
