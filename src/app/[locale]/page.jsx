@@ -7,7 +7,7 @@ import ScrollToTop from "@/app/[locale]/components/scroll-to-top/index";
 import './page.scss';
 
 export const metadata = {
-  title:"Home title",
+  title:"Savana",
   description:"home metadata description"
 }
 

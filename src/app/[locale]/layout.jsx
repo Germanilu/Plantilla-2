@@ -6,12 +6,16 @@ import { Cormorant  }                             from "next/font/google";
 import { useLocale }                         from "next-intl";
 import { notFound }                          from "next/navigation";
 import { Providers }                         from "../Redux/provider";
+import favicon                               from '../public/favicon.ico'
 import "./globals.css";
 const cormorant = Cormorant ({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Default title",
-  description: "Default description",
+  title: "Savana",
+  description: "Il miglior pasto della tua vita",
+  icons: {
+    icon: favicon.src, 
+  }
 };
 
 export default function RootLayout({ children, params }) {
