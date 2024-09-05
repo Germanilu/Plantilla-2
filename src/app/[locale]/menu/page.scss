@@ -1,8 +1,61 @@
 @import "../../utilities/variables.scss";
 
 .menu-design{
-    height: 100vh;
+    // height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 2rem auto;
+    .menu-title{
+       margin: 2rem 0rem;
+    }
+    .menu-container{
+        // border: 1px solid red;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        .container{
+            width: 100%;
+            // border: 1px solid blue;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            p{
+                width: 100%;
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 28px;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+            .dish-container{
+                // border: 1px solid red;
+                display: flex;
+                width: 30%;
+                .dish-text{
+                    width: 100%;
+                    // border: 1px solid green;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .dish-name{
+                        text-align: center;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        margin-bottom: 1rem;
+                    }
+                    .dish-description{
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
 }

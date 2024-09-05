@@ -1,55 +1,97 @@
 {
-      "Animation-Hero":{
-      "restaurant-name":"Savana",
-      "text1":"Un Viaggio nel Gusto",
-      "text2":"Dal Nostro Cuore",
-      "text3":"alla Tua Tavola."
-      },
-      "Hero":{
-        "our":"La Nostra",
-        "kitchen":"Cucina",
-        "capital-letter":"K.",
-        "text1":"Sotto la guida del nostro Chef Kayle e di un team appassionato, eleviamo la cucina a una forma d'arte. Dai menu su misura e cene private intime agli eventi grandiosi e al nostro esclusivo Chef's Table, ogni pasto è realizzato con precisione e stile. Aperto agli ospiti più esigenti, offriamo colazioni e pranzi squisiti dal lunedì al venerdì. E per quelle sere in cui desideri sapori gourmet ma non puoi uscire, i nostri nuovi Take-Away Dinners portano la maestria della nostra cucina direttamente a casa tua. Lasciati coccolare dai nostri sapori, sia che tu stia cenando con noi o godendo delle nostre creazioni nel comfort della tua casa.",
-        "menu":"Savana Il Menu"
-      },
-      "Breakfast":{
-        "breakfast":"Fai colazione con noi",
-        "title":"Fai colazione con noi",
-        "text":"Con prodotti freschi e di stagione",
-        "dish1":"Avocado Toast",
-        "dish2":"Uova alla Benedict",
-        "dish3":"French Toast Brioche",
-        "dish4":"Pancake Soffici alla ricotta",
-        "dish5":"Pancakes classici",
-        "dish6":"Shakshuka",
-        "dish7":"Waffle Croccanti",
-        "dish8":"Yogurt Greco con Granola",
-        "dish9":"Succhi Freschi"
-      },
-      "Menu-Banner":{
-        "title":"Scopri il nostro Menu",
-        "text":"Lasciati tentare dai sapori unici delle nostre specialità, preparate con ingredienti freschi e di alta qualità. Esplora le nostre proposte e trova il piatto perfetto per il tuo palato.",
-        "button-text":"Savana il Menu"
-      },
-      "Navbar":{
-        "home": "Home",
-        "about-us":"Dicono di Noi",
-        "menu": "Menu",
-        "special":"Specials",
-        "contact-us":"Contatto",
-        "breakfast":"Fai colazione con noi",
-        "savana":"Savana Restaurant"
-      },
-      "About":{
-        "title":"La nostra storia",
-        "p1":"Da 15 anni, il nostro ristorante vegetariano è un luogo dove l'amore per il cibo e l'attenzione ai dettagli si uniscono per offrirti un'esperienza autentica. Siamo orgogliosi di fare le cose con la stessa cura del primo giorno, selezionando i migliori ingredienti e curando ogni aspetto di ciò che facciamo.",
-        "p2":"Siamo un team che lavora come una famiglia, e questo calore si riflette nell'attenzione che offriamo. Crediamo nell'importanza di ogni piccolo dettaglio e nella creazione di momenti speciali per i nostri clienti.",
-        "p3":"Grazie per far parte della nostra storia e per permetterci di condividere la nostra passione con te."
-      },
-      "Contact-us":{
-        "title":"Contattaci"
-      },
-     "Contact-Component": {
+  "Animation-Hero": {
+    "restaurant-name": "Savana",
+    "text1": "Un Viaggio nel Gusto",
+    "text2": "Dal Nostro Cuore",
+    "text3": "alla Tua Tavola."
+  },
+  "Hero": {
+    "our": "La Nostra",
+    "kitchen": "Cucina",
+    "capital-letter": "K.",
+    "text1": "Sotto la guida del nostro Chef Kayle e di un team appassionato, eleviamo la cucina a una forma d'arte. Dai menu su misura e cene private intime agli eventi grandiosi e al nostro esclusivo Chef's Table, ogni pasto è realizzato con precisione e stile. Aperto agli ospiti più esigenti, offriamo colazioni e pranzi squisiti dal lunedì al venerdì. E per quelle sere in cui desideri sapori gourmet ma non puoi uscire, i nostri nuovi Take-Away Dinners portano la maestria della nostra cucina direttamente a casa tua. Lasciati coccolare dai nostri sapori, sia che tu stia cenando con noi o godendo delle nostre creazioni nel comfort della tua casa.",
+    "menu": "Savana Il Menu"
+  },
+  "Breakfast": {
+    "breakfast": "Fai colazione con noi",
+    "title": "Fai colazione con noi",
+    "text": "Con prodotti freschi e di stagione",
+    "dish1": "Avocado Toast",
+    "dish2": "Uova alla Benedict",
+    "dish3": "French Toast Brioche",
+    "dish4": "Pancake Soffici alla ricotta",
+    "dish5": "Pancakes classici",
+    "dish6": "Shakshuka",
+    "dish7": "Waffle Croccanti",
+    "dish8": "Yogurt Greco con Granola",
+    "dish9": "Succhi Freschi"
+  },
+ "Menu": {
+  "title": "Scopri il Nostro Menu",
+  "starters": "Antipasti",
+  "starter1": "Tartare di Salmone con Avocado e Salsa di Sesamo",
+  "starter1desc": "Salmone fresco marinato, servito su un letto di avocado, con un tocco di salsa di sesamo e chips croccanti di alghe.",
+  "starter2": "Crocchette di Prosciutto Iberico e Tartufo",
+  "starter2desc": "Classiche crocchette spagnole ripiene di prosciutto iberico e un tocco di tartufo, servite con aioli all'aglio nero.",
+  "starter3": "Carpaccio di Manzo con Vinaigrette agli Agrumi e Basilico",
+  "starter3desc": "Sottili fette di manzo con vinaigrette agli agrumi, foglie di basilico fresco e scaglie di parmigiano.",
+  "starter4": "Tempura di Gamberi con Salsa di Mango e Peperoncino",
+  "starter4desc": "Gamberi croccanti in tempura, accompagnati da una salsa dolce e piccante di mango e peperoncino.",
+  "starter5": "Insalata di Burrata con Fichi e Riduzione di Balsamico",
+  "starter5desc": "Burrata cremosa su un letto di rucola, con fichi freschi e riduzione di aceto balsamico.",
+  "starter6": "Zuppa di Granchio e Cocco con Lime e Coriandolo",
+  "starter6desc": "Una zuppa cremosa di granchio con un tocco esotico di cocco, profumata con lime e coriandolo fresco.",
+  "main": "Piatti Principali",
+  "main1": "Filetto Mignon con Purè di Patate al Tartufo e Asparagi",
+  "main1desc": "Filetto mignon succulento cotto a puntino, servito con purè di patate al tartufo e asparagi alla griglia.",
+  "main2": "Risotto ai Funghi Selvatici e Parmigiano",
+  "main2desc": "Risotto cremoso con un mix di funghi selvatici, rifinito con parmigiano grattugiato e un tocco di olio al tartufo.",
+  "main3": "Merluzzo al Miso con Verdure di Stagione",
+  "main3desc": "Filetto di merluzzo marinato al miso, cotto al forno e servito con verdure di stagione al vapore.",
+  "main4": "Pollo al Curry Verde con Riso Jasmine",
+  "main4desc": "Petto di pollo in una ricca salsa al curry verde thailandese, accompagnato da riso jasmine aromatico.",
+  "main5": "Ravioli di Zucca con Burro alla Salvia e Noci Tostate",
+  "main5desc": "Ravioli fatti in casa ripieni di zucca, serviti con burro alla salvia e noci tostate.",
+  "main6": "Anatra all'Arancia con Purè di Patate Dolci e Cavolo Riccio Croccante",
+  "main6desc": "Petto d'anatra glassato con una salsa all'arancia, accompagnato da purè di patate dolci e cavolo riccio croccante.",
+  "dessert": "Dessert",
+  "dessert1": "Torta al Cioccolato con Salsa di Lamponi",
+  "dessert1desc": "Torta al cioccolato fondente, servita con una vivace salsa di lamponi e un tocco di panna montata.",
+  "dessert2": "Cheesecake alla Vaniglia con Riduzione di Frutto della Passione",
+  "dessert2desc": "Classico cheesecake alla vaniglia su una base di biscotto, coronato con riduzione di frutto della passione.",
+  "dessert3": "Crème Brûlée al Tè Matcha",
+  "dessert3desc": "Una versione moderna del classico francese, infusa con tè matcha e la tradizionale crosta di zucchero caramellato.",
+  "dessert4": "Tiramisù al Cocco con un Tocco di Rum",
+  "dessert4desc": "Tiramisù reinventato con un tocco tropicale di cocco e un leggero sentore di rum.",
+  "dessert5": "Gelato alla Lavanda con Miele e Pistacchi",
+  "dessert5desc": "Gelato artigianale alla lavanda, servito con un filo di miele e pistacchi croccanti.",
+  "dessert6": "Macedonia di Frutta Esotica con Schiuma di Yogurt e Menta",
+  "dessert6desc": "Questo dessert esalta la freschezza della frutta e aggiunge un tocco cremoso e rinfrescante con la schiuma di yogurt."
+},
+  "Menu-Banner": {
+    "title": "Scopri il nostro Menu",
+    "text": "Lasciati tentare dai sapori unici delle nostre specialità, preparate con ingredienti freschi e di alta qualità. Esplora le nostre proposte e trova il piatto perfetto per il tuo palato.",
+    "button-text": "Savana il Menu"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about-us": "Dicono di Noi",
+    "menu": "Menu",
+    "special": "Specials",
+    "contact-us": "Contatto",
+    "breakfast": "Fai colazione con noi",
+    "savana": "Savana Restaurant"
+  },
+  "About": {
+    "title": "La nostra storia",
+    "p1": "Da 15 anni, il nostro ristorante vegetariano è un luogo dove l'amore per il cibo e l'attenzione ai dettagli si uniscono per offrirti un'esperienza autentica. Siamo orgogliosi di fare le cose con la stessa cura del primo giorno, selezionando i migliori ingredienti e curando ogni aspetto di ciò che facciamo.",
+    "p2": "Siamo un team che lavora come una famiglia, e questo calore si riflette nell'attenzione che offriamo. Crediamo nell'importanza di ogni piccolo dettaglio e nella creazione di momenti speciali per i nostri clienti.",
+    "p3": "Grazie per far parte della nostra storia e per permetterci di condividere la nostra passione con te."
+  },
+  "Contact-us": {
+    "title": "Contattaci"
+  },
+  "Contact-Component": {
     "title": "Incontriamoci",
     "restaurant-name": "Savana",
     "tagline": "Un'esperienza unica nel gusto.",
@@ -62,8 +104,8 @@
     "weekday-hours": "Mar - Ven: 12:30 - 22:30",
     "weekend-hours": "Sab - Dom: 11:30 - 23:30",
     "monday-closed": "Lunedì: Chiuso"
-    },
-    "Footer": {
+  },
+  "Footer": {
     "phone-label": "telefono",
     "phone-number": "+39 333464646",
     "inquiries-label": "Richieste",
@@ -72,5 +114,5 @@
     "instagram": "Instagram",
     "facebook": "Facebook",
     "text": "@ Savana Restaurant | by Il Codice del Gusto"
-    }
+  }
 }
