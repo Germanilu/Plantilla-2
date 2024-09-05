@@ -1,7 +1,6 @@
 @import "../../utilities/variables.scss";
 
 .menu-design{
-    // height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,9 +14,8 @@
         display: flex;
         flex-direction: column;
         gap: 5rem;
-        .container{
+        .cnt{
             width: 100%;
-            // border: 1px solid blue;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -33,7 +31,6 @@
                 margin-bottom: 1rem;
             }
             .dish-container{
-                // border: 1px solid black;
                 display: flex;
                 width: 45%;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -92,7 +89,7 @@
 @media (max-width: 1000px) {
     .menu-design{
         .menu-container{
-            .container{
+            .cnt{
                 .dish-container{
                     width: 90%;
                 }
@@ -104,7 +101,7 @@
 @media (max-width: 478px) {
     .menu-design{
         .menu-container{
-            .container{
+            .cnt{
                 .dish-container{
                     width: 95%;
                     .dish-text{

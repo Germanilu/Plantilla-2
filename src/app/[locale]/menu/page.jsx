@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
+import {motion} from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from 'next/image';
 import { menu } from '@/static/menu';
@@ -27,12 +28,20 @@ export default function Menu() {
     <div className="menu-design">
       <h1 className="menu-title">{t('title')}</h1>
       <div className="menu-container">
-        <div className="container">
+        <div className="cnt">
           <p>{t('starters')}</p>
           {
             starters.map((dish) => {
               return (
-                <div className="dish-container" key={dish.id}  onClick={() => handleImageClick(dish.img.src)}>
+                <motion.div className="dish-container" key={dish.id}  onClick={() => handleImageClick(dish.img.src)}
+                variants={{
+                hidden:{opacity:0, x:-75},
+                visible:{opacity:1,x:0},
+              }}
+              transition={{delay: dish.id * 0.2818, duration:0.5}}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}>
                   <div className="image-container">
                     <Image className="img" src={dish.img.src} alt="menu-savana" width={200} height={200} quality={100} />
                   </div>
@@ -40,17 +49,26 @@ export default function Menu() {
                     <span className="dish-name">{t(`${dish.dishName}`)}</span>
                     <span className="dish-description">{t(`${dish.dishDescription}`)}</span>
                   </div>
-                </div>
+                </motion.div>
               )
             })
           }
         </div>
-        <div className="container">
+        <div className="cnt">
           <p>{t('main')}</p>
           {
             main.map((dish) => {
               return (
-                <div className="dish-container" key={dish.id} onClick={() => handleImageClick(dish.img.src)}>
+                <motion.div className="dish-container" key={dish.id} onClick={() => handleImageClick(dish.img.src)}
+                variants={{
+                  hidden:{opacity:0, x:-75},
+                  visible:{opacity:1,x:0},
+                }}
+                transition={{delay: dish.id * 0.2818, duration:0.5}}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}>
+
                   <div className="image-container">
                     <Image className="img" src={dish.img.src} alt="menu-savana" width={200} height={200} quality={100} />
                   </div>
@@ -58,17 +76,26 @@ export default function Menu() {
                     <span className="dish-name">{t(`${dish.dishName}`)}</span>
                     <span className="dish-description">{t(`${dish.dishDescription}`)}</span>
                   </div>
-                </div>
+                </motion.div>
               )
             })
           }
         </div>
-        <div className="container">
+        <div className="cnt">
           <p>{t('dessert')}</p>
           {
             dessert.map((dish) => {
               return (
-                <div className="dish-container" key={dish.id} onClick={() => handleImageClick(dish.img.src)}>
+                <motion.div className="dish-container" key={dish.id} onClick={() => handleImageClick(dish.img.src)}
+                variants={{
+                  hidden:{opacity:0, x:-75},
+                  visible:{opacity:1,x:0},
+                }}
+                transition={{delay: dish.id * 0.2818, duration:0.5}}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}>
+
                   <div className="image-container">
                     <Image className="img" src={dish.img.src} alt="menu-savana" width={200} height={200} quality={100} />
                   </div>
@@ -76,7 +103,7 @@ export default function Menu() {
                     <span className="dish-name">{t(`${dish.dishName}`)}</span>
                     <span className="dish-description">{t(`${dish.dishDescription}`)}</span>
                   </div>
-                </div>
+                </motion.div>
               )
             })
           }
