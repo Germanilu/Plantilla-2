@@ -11,8 +11,7 @@
        margin: 2rem 0rem;
     }
     .menu-container{
-        // border: 1px solid red;
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 5rem;
@@ -34,25 +33,88 @@
                 margin-bottom: 1rem;
             }
             .dish-container{
-                // border: 1px solid red;
+                // border: 1px solid black;
                 display: flex;
-                width: 30%;
+                width: 45%;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                .image-container{
+                    transform: scale(1);
+                    transition: transform .5s ease;
+                }
+                &:hover{
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    .image-container{
+                        transform: scale(1.1);
+                    }
+                }
                 .dish-text{
                     width: 100%;
-                    // border: 1px solid green;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     .dish-name{
                         text-align: center;
-                        font-weight: 500;
+                        font-weight: 700;
                         text-transform: uppercase;
                         margin-bottom: 1rem;
+                        font-size: 18px;
                     }
                     .dish-description{
+                        text-transform: uppercase;
+                        font-size: 14px;
                         text-align: center;
                         font-weight: 500;
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+    .full-screen-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        .full-screen-img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        }
+}
+
+@media (max-width: 1000px) {
+    .menu-design{
+        .menu-container{
+            .container{
+                .dish-container{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 478px) {
+    .menu-design{
+        .menu-container{
+            .container{
+                .dish-container{
+                    width: 95%;
+                    .dish-text{
+                        .dish-name{
+                            font-size: 16px;
+                        }
+                        .dish-description{
+                            width: 100%;
+                            font-size: 12px;
+                        }
                     }
                 }
             }
