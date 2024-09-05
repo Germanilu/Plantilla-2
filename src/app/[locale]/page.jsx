@@ -23,7 +23,10 @@ export default function Home() {
       </div>
        <Breakfast/>
        <Menu/>
+       <div id="contact">
        <Contact/>
+
+       </div>
       <ScrollToTop />
     </div>
   )

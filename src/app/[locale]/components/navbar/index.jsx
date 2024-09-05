@@ -68,7 +68,7 @@ export default function Navbar() {
                     <div className="left-menu-mobile">
                       <Link className="item" href="/breakfast" onClick={() => setOpenMenu(!openMenu)}>{t('breakfast')}</Link>
                       <Link className="item" href="/menu" onClick={() => setOpenMenu(!openMenu)}>{t('menu')}</Link>
-                      <Link className="item" href="/contact-us" onClick={() => setOpenMenu(!openMenu)}>{t('contact-us')}</Link>
+                      <Link className="item"href="/#contact" onClick={() => setOpenMenu(!openMenu)}>{t('contact-us')}</Link>
                     </div>
                     <div className="language-switcher-box">
                       <LanguageSwitcher className="language-switcher" />
@@ -129,7 +129,7 @@ export default function Navbar() {
                 </li>
                 <li className="list-item">
                   <div className="dot"></div>
-                  <Link className="item" href="/contact-us">{t('contact-us')}</Link>
+                  <Link className="item" href="/#contact">{t('contact-us')}</Link>
                 </li>
               </ul>
               <div className="language-switcher-container">
