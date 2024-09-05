@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl";
 import { useSelector }      from 'react-redux';
 import {motion} from "framer-motion";
+import { Link } from '../../../../navigation';
 import Image from 'next/image';
 import tomatoes from "../../../../static/media/img/tomatoes.png";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
@@ -27,7 +28,7 @@ const Menu = () => {
                         <h2>{t('title')}</h2>
                         <p>{t('text')}</p>
                         <div className="menu-button">
-                            <p className="menu">{t('button-text')}</p>
+                            <Link className="menu" href="/menu">{t('button-text')}</Link>
                             <HiOutlineArrowLongRight className="arrow" size={40} color='#2A2D34'/>
                         </div>
                     </div>
