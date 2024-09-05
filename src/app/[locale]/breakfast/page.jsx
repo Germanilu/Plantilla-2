@@ -1,6 +1,6 @@
 'use client';
 import { useTranslations } from "next-intl";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import avocadotoast from "../../../static/media/img/br-avocadotoast.jpg";
@@ -19,11 +19,11 @@ export default function BreakFast() {
   const [fullScreenImage, setFullScreenImage] = useState(null);
 
   const handleImageClick = (image) => {
-    setFullScreenImage(image); // Set the clicked image as full-screen
+    setFullScreenImage(image);
   };
 
   const handleCloseFullScreen = () => {
-    setFullScreenImage(null); // Close the full-screen image
+    setFullScreenImage(null); 
   };
 
   return (
