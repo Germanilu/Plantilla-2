@@ -1,6 +1,6 @@
 @import "../../../utilities/variables.scss";
 
-.navbar{
+.navbar {
   width: 100%;
   background-color: $white;
   padding: 1rem 0rem;
@@ -9,45 +9,51 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  .logo{
+
+  .logo {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 28px;
     margin-left: 6rem;
     cursor: pointer;
-    color:#131417;
+    color: #131417;
   }
-  .navbar-list-container{
+
+  .navbar-list-container {
     display: flex;
     flex-direction: row;
     gap: 3rem;
     align-items: flex-start;
-    .navbar-list{
+
+    .navbar-list {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       gap: .3rem;
       color: #131417;
-      .list-item{
+
+      .list-item {
         list-style-type: none;
         display: flex;
         align-items: center;
         font-size: 18px;
         font-weight: 500;
         text-transform: uppercase;
-        .dot{
+
+        .dot {
           width: 5px;
           height: 5px;
           border-radius: 50%;
           background-color: #131417;
-          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
           transition: transform 0.3s ease;
           opacity: 0;
         }
-        &:hover{
-          .dot{
+
+        &:hover {
+          .dot {
             display: block;
-            transform: translate3d(-8px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+            transform: translate3d(-8px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
             opacity: 1;
           }
@@ -55,7 +61,8 @@
       }
 
     }
-    .language-switcher-container{
+
+    .language-switcher-container {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -65,16 +72,17 @@
 }
 
 
-@media  (max-width: 767px) {
-  .navbar{
+@media (max-width: 767px) {
+  .navbar {
     padding: 0rem 0rem;
     border-bottom: none;
     align-items: flex-start;
     justify-content: center;
-    .menu-action{
+
+    .menu-action {
       margin: 0 auto;
       width: 100%;
-      display: flex; 
+      display: flex;
       flex-direction: row-reverse;
       align-items: center;
       justify-content: space-between;
@@ -84,7 +92,8 @@
       width: 100%;
       border-bottom: 1px solid #ddd;
       padding: 0rem .5rem;
-      .logo-menu-close{
+
+      .logo-menu-close {
         font-size: 58px;
         margin-left: 0rem;
         padding: 0rem 1rem;
@@ -92,29 +101,34 @@
         text-transform: uppercase;
         color: #ddd;
       }
-      &.open{
+
+      &.open {
         height: 100%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
       }
-      .burger-menu-icon{
+
+      .burger-menu-icon {
         margin-right: .5rem;
         margin-top: .5rem;
       }
-      .container-navbar{
+
+      .container-navbar {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .logo{
+
+        .logo {
           margin: 0;
           margin-top: 5rem;
           margin-bottom: 6rem;
           font-size: 28px;
           color: #ddd;
         }
-        .mobile-navbar-box{
+
+        .mobile-navbar-box {
           width: 100%;
           display: flex;
           flex-direction: row;
@@ -125,21 +139,24 @@
           border-bottom: 1px solid #ddd;
           border-top: 1px solid #ddd;
           gap: 2rem;
-          .left-menu-mobile{
+
+          .left-menu-mobile {
             display: flex;
             flex-direction: column;
             gap: .5rem;
             color: #ddd;
-            .item{
+
+            .item {
               font-size: 18px;
               font-weight: 500;
               text-transform: uppercase;
               text-align: center;
             }
-            
+
           }
         }
-        .contact-information-box{
+
+        .contact-information-box {
           display: grid;
           grid-template-columns: repeat(2, max-content);
           gap: 1rem 2rem;
@@ -149,27 +166,30 @@
           justify-content: center;
           color: #ddd;
           border-bottom: 1px solid #ddd;
-          
-          .info{
+
+          .info {
             display: flex;
             flex-direction: column;
-            .info-label{
+
+            .info-label {
               font-size: 18px;
               font-weight: 500;
               text-transform: uppercase;
             }
-            .info-text{
+
+            .info-text {
               font-size: 16px;
             }
           }
         }
-        .registered{
+
+        .registered {
           margin-top: 5rem;
           color: #ddd;
         }
 
       }
-      
+
     }
   }
 }

@@ -17,7 +17,6 @@ export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const isMobile = useSelector(state => state.responsive.isMobile);
 
-
   return (
     <>
       {
