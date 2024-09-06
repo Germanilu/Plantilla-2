@@ -8,7 +8,7 @@ import './page.scss';
 
 export const metadata = {
   title:"Savana",
-  description:"home metadata description"
+  description:"Il miglior pasto della tua vita"
 }
 
 export default function Home() {
@@ -25,7 +25,6 @@ export default function Home() {
        <Menu/>
        <div id="contact">
        <Contact/>
-
        </div>
       <ScrollToTop />
     </div>
