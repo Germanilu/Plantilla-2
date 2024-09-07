@@ -13,10 +13,12 @@
     justify-content: space-between;
     height: 85vh;
     flex-direction: column;
+
     .text {
       padding-left: 7rem;
       display: flex;
       flex-wrap: wrap;
+
       h1,
       h4 {
         font-size: 85px;
@@ -24,36 +26,43 @@
         text-transform: uppercase;
         line-height: .7em;
       }
-      h1{
+
+      h1 {
         width: 100%;
       }
-      h4{
+
+      h4 {
         margin-left: 3rem;
       }
     }
-    .bottom-text{
-      .capital-letter{
+
+    .bottom-text {
+      .capital-letter {
         font-weight: 500;
         font-size: 52px;
       }
-      p{
+
+      p {
         width: 50%;
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 500;
       }
-      .button-menu{
+
+      .button-menu {
         display: flex;
         align-items: center;
         width: max-content;
         gap: .5rem;
         margin-top: 1rem;
         transition: gap 0.7s ease;
+
         &:hover {
           gap: 2rem;
           cursor: pointer;
         }
-        .menu{
+
+        .menu {
           width: max-content;
           font-size: 32px;
           font-weight: 500;
@@ -67,7 +76,8 @@
     margin-top: 5rem;
     animation: fade-in linear;
     animation-timeline: view(0px);
-    .img{
+
+    .img {
       width: 100%;
       height: 100%;
     }
@@ -76,62 +86,74 @@
 
 
 @media (max-width: 744px) {
-  .hero-design{
+  .hero-design {
     flex-direction: column;
     height: 100vh;
-    .text{
+
+    .text {
       margin: 0 auto;
       font-size: 52px;
       font-weight: 500;
       text-transform: uppercase;
       line-height: 1em;
       margin-top: 7rem;
-      h1,h4{
+
+      h1,
+      h4 {
         font-size: 85px;
         font-weight: 500;
         text-transform: uppercase;
         line-height: .7em;
       }
-      h4{
+
+      h4 {
         padding-left: 2rem;
       }
     }
+
     .image-container {
       width: 100%;
       margin-top: 2rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      .img{
+
+      .img {
         width: 350px;
         height: 500px;
       }
     }
-    .bottom-text{
+
+    .bottom-text {
       width: 50%;
       margin: 0 auto;
       margin-top: 2rem;
-      .capital-letter{
+
+      .capital-letter {
         font-weight: 500;
         font-size: 52px;
       }
-      p{
+
+      p {
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 500;
       }
-      .button-menu{
+
+      .button-menu {
         display: flex;
         align-items: center;
         width: max-content;
         gap: .5rem;
         margin-top: 1rem;
         transition: gap 0.7s ease;
+
         &:hover {
           gap: 2rem;
           cursor: pointer;
         }
-        .menu{
+
+        .menu {
           width: max-content;
           font-size: 32px;
           font-weight: 500;
@@ -142,33 +164,41 @@
 }
 
 @media (max-width: 390px) {
-  .hero-design{
+  .hero-design {
     height: 100%;
-    .text{
-      h1,h4{
+
+    .text {
+
+      h1,
+      h4 {
         font-size: 52px;
         font-weight: 500;
         text-transform: uppercase;
         line-height: .7em;
       }
     }
+
     .image-container {
       width: 100%;
       margin-top: 2rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      .img{
+
+      .img {
         width: 300px;
         height: 450px;
       }
     }
-    .bottom-text{
+
+    .bottom-text {
       width: 70%;
-      .capital-letter{
+
+      .capital-letter {
         font-size: 48px;
       }
-      .button-menu{
+
+      .button-menu {
         margin-bottom: 1rem;
       }
     }
@@ -176,7 +206,12 @@
 }
 
 
-@keyframes fade-in{
-  from{scale:1; }
-  to{scale:.8;}
+@keyframes fade-in {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: .8;
+  }
 }
