@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion";
-import { useTranslations }      from "next-intl";
+import { useTranslations } from "next-intl";
 import './index.scss';
 
 const AnimationHero = () => {

@@ -6,9 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #131417;  
+  background-color: #131417;
+
   p {
-    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
     padding-bottom: .8rem;
     font-size: 82px;
   }
@@ -20,15 +21,16 @@
   margin-left: 1rem;
 }
 
-.animation > div > div {
+.animation>div>div {
   padding: 0.25rem 0.75rem;
   height: 2.71rem;
   margin-bottom: 3rem;
   display: inline-block;
 }
-.animation{
-  .first{
-    .first-text{
+
+.animation {
+  .first {
+    .first-text {
       padding: 0rem 0.75rem 0.25rem 0.75rem;
     }
   }
@@ -42,13 +44,36 @@
 
 
 @keyframes text-animation {
-  0% { margin-top:  0; opacity: 0;}
-  5%{ margin-top: 0; opacity: 1;}
-  25% { margin-top: 0;}
-  35% { margin-top: -5.82rem; }
-  60% { margin-top: -5.82rem; }
-  70% { margin-top: -11.24rem; }
-  100% { margin-top: -11.24rem; opacity: 1; }
+  0% {
+    margin-top: 0;
+    opacity: 0;
+  }
+
+  5% {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  25% {
+    margin-top: 0;
+  }
+
+  35% {
+    margin-top: -5.82rem;
+  }
+
+  60% {
+    margin-top: -5.82rem;
+  }
+
+  70% {
+    margin-top: -11.24rem;
+  }
+
+  100% {
+    margin-top: -11.24rem;
+    opacity: 1;
+  }
 }
 
 
@@ -56,8 +81,9 @@
 @media (max-width: 744px) {
   .container {
     flex-direction: column;
-    .animation{
-      div{
+
+    .animation {
+      div {
         text-align: center;
       }
     }
@@ -66,9 +92,10 @@
 
 
 @media (max-width: 390px) {
-  .container{
+  .container {
     font-size: 26px;
-    p{
+
+    p {
       font-size: 68px;
     }
   }
