@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from 'next/image';
 import { menu } from '@/static/menu';
@@ -33,15 +33,15 @@ export default function Menu() {
           {
             starters.map((dish) => {
               return (
-                <motion.div className="dish-container" key={dish.id}  onClick={() => handleImageClick(dish.img.src)}
-                variants={{
-                hidden:{opacity:0, x:-75},
-                visible:{opacity:1,x:0},
-              }}
-              transition={{delay: dish.id * 0.2818, duration:0.5}}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}>
+                <motion.div className="dish-container" key={dish.id} onClick={() => handleImageClick(dish.img.src)}
+                  variants={{
+                    hidden: { opacity: 0, x: -75 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ delay: dish.id * 0.2818, duration: 0.5 }}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}>
                   <div className="image-container">
                     <Image className="img" src={dish.img.src} alt="menu-savana" width={200} height={200} quality={100} />
                   </div>
@@ -60,14 +60,14 @@ export default function Menu() {
             main.map((dish) => {
               return (
                 <motion.div className="dish-container" key={dish.id} onClick={() => handleImageClick(dish.img.src)}
-                variants={{
-                  hidden:{opacity:0, x:-75},
-                  visible:{opacity:1,x:0},
-                }}
-                transition={{delay: dish.id * 0.2818, duration:0.5}}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}>
+                  variants={{
+                    hidden: { opacity: 0, x: -75 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ delay: dish.id * 0.2818, duration: 0.5 }}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}>
 
                   <div className="image-container">
                     <Image className="img" src={dish.img.src} alt="menu-savana" width={200} height={200} quality={100} />
@@ -87,14 +87,14 @@ export default function Menu() {
             dessert.map((dish) => {
               return (
                 <motion.div className="dish-container" key={dish.id} onClick={() => handleImageClick(dish.img.src)}
-                variants={{
-                  hidden:{opacity:0, x:-75},
-                  visible:{opacity:1,x:0},
-                }}
-                transition={{delay: dish.id * 0.2818, duration:0.5}}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}>
+                  variants={{
+                    hidden: { opacity: 0, x: -75 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ delay: dish.id * 0.2818, duration: 0.5 }}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}>
 
                   <div className="image-container">
                     <Image className="img" src={dish.img.src} alt="menu-savana" width={200} height={200} quality={100} />
@@ -117,6 +117,6 @@ export default function Menu() {
       )}
     </div>
 
-    
+
   )
 }
